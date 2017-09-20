@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Calculo IMC
+    </title>
+    <link rel="stylesheet" type="text/css" href="stilo.css">
+</head>
+<header>
+    <h1 id="hh1">Calculo IMC</h1>
+</header>
+
+<body>
+    <div id="titulo1">
+        <h1>Meus Pacientes</h1>
+    </div>
+    <main>
+        <section class="section1">
+            <table id="tabelaImc">
+                <thead>
+                    <th>Nome</th>
+                    <th>Peso(kg)</th>
+                    <th>Altura(m)</th>
+                    <th>IMC</th>
+                    <th>Situação</th>
+                </thead>
+                <tbody>
+                    <tr class="paciente">
+                        <td class="info_nome">Marcio</td>
+                        <td class="info_peso">89</td>
+                        <td class="info_altura">1.89</td>
+                        <td class="info_imc"></td>
+                        <td class="info_situ"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input id="calcImc" class="btn" type="submit" onclick="calcularImcs()" value="Calcular IMC">
+        </section>
+        <hr>
+        <section class="section2">
+            <div id="titulo2">
+                <h1>Adicionar Novo Paciente</h1>
+            </div>
+            <form id="form">
+                <fieldset class="campo_nome">
+                    <label for="nome"><strong>Nome: </strong></label>
+                    <input id="campo_nome" type="text" placeholder="Digite o nome do paciente">
+                </fieldset>
+                <fieldset class="campo_peso">
+                    <label for="peso"><strong>Peso: </strong></label>
+                    <input id="campo_peso" type="number" placeholder="Digite o peso do paciente">
+                </fieldset>
+                <fieldset class="campo_altura">
+                    <label for="altura"><strong>Altura: </strong></label>
+                    <input id="campo_altura" type="number" placeholder="Digite a altura do paciente">
+                </fieldset>
+            </form>
+            <input id="addPaciente" class="btn" type="submit" value="Adicionar Paciente">
+            <input id="btn3" class="btn" type="submit" onclick="remPaciente()" value="Remover Paciente">
+        </section>
+        <hr>
+    </main>
+    <script type="text/javascript" src="calcimc.js"></script>
+    <footer>
+        <div class="foot">
+            <hr>
+            <hr>
+            <h4><strong>Marcio Ariani Feitosa</strong></h4>
+            <address>
+                UFMS - Universidade Federal de Mato Grosso do Sul
+            </address>
+            <address>
+                Sistemas de Informação
+            </address>
+            <address>
+                (67) 99875-4288
+            </address>
+            <address>
+                Todos os Direitos Reservados
+            </address>
+            <hr>
+        </div>
+    </footer>
+</body>
+
+</html>
